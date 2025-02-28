@@ -1,0 +1,373 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Varela Round";
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5;  /* Light gray background */
+    color: #333;  /* Dark gray text */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background-color: #fff;  /* White background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* z-index: 1000; */
+}
+
+.navbar a {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #666;  /* Medium gray text */
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li {
+    font-weight: 500;
+}
+
+.menu li a {
+    font-size: 1.1rem;
+    color: #444;  /* Darker gray for menu links */
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #000;  /* Black hover effect */
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 10% 5rem 10%;
+    background-color: #e0e0e0;  /* Light gray background for the about section */
+    margin-top: 80px; /* Prevent navbar overlap */
+}
+
+.about .about-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.about img {
+    width: 30vw;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.about img:hover {
+    transform: scale(1.05);
+}
+
+.info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.info h3 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    opacity: 0.8;
+    color: #666;  /* Medium gray for subheading */
+}
+
+.info h1 {
+    font-weight: 600;
+    font-size: 4rem;
+    color: #333;  /* Dark gray for main heading */
+}
+
+.about span {
+    font-size: 2rem;
+    color: #555;  /* Slightly darker gray */
+}
+
+.btn-grp {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    border-radius: 3rem;
+    border: 2px solid #444;  /* Darker gray border */
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: #444;  /* Dark gray text */
+}
+
+.btn:hover {
+    background-color: #333;  /* Dark background on hover */
+    color: #fff;  /* White text */
+}
+
+.socials {
+    display: flex;
+    gap: 2rem;
+}
+
+.socials i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.socials i:hover {
+    transform: scale(1.1);
+}
+
+/* About Me Section */
+.aboutme {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 4rem 10%;
+}
+
+.aboutme p {
+    line-height: 1.7;
+    color: #666;  /* Medium gray text */
+}
+
+/* Skills Section */
+.skills {
+    text-align: center;
+    padding: 5rem 10%;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    color: #333;  /* Dark gray */
+}
+
+.skills .Stext {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: #555;  /* Medium gray */
+}
+
+.cell {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.cell img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.cell img:hover {
+    transform: scale(1.1);
+}
+
+.cell span {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #333;  /* Dark gray for text */
+}
+
+/* Projects Section */
+.projects {
+    padding: 5rem 10%;
+    background-color: #f0f0f0;  /* Slightly lighter gray background */
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333;  /* Dark gray */
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.project-card {
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 2px solid #ddd;  /* Light gray border */
+    border-radius: 1rem;
+    background-color: #fff;  /* White background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    background-color: #666;  /* Medium gray background on hover */
+    color: white;  /* White text on hover */
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.project-card h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #333;  /* Dark gray for project title */
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;  /* Medium gray for project description */
+}
+
+.project-card .btn-grp {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-card .btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    transition: all 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Contact Form Section */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 10%;
+    background-color: #f9f9f9;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #333;  /* Dark gray */
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;  /* Medium gray */
+}
+.contact-text a{
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;  /* Dark gray footer background */
+    color: #fff;  /* White text */
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #ccc;  /* Lighter gray on hover */
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 2rem 5%;
+    }
+
+    .about {
+        padding: 8rem 5% 5rem 5%;
+    }
+
+    .about .about-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .skills .Stext {
+        font-size: 1rem;
+    }
+
+    .skills h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+    }
+}
