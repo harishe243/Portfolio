@@ -123,6 +123,10 @@ body {
     color: #444;  /* Dark gray text */
 }
 
+ .btn a{
+    text-decoration: none;
+ }
+
 .btn:hover {
     background-color: #333;  /* Dark background on hover */
     color: #fff;  /* White text */
